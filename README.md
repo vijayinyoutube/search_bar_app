@@ -29,9 +29,9 @@ Visit my channel 👉 : https://www.youtube.com/channel/UCBC_Z7jla1GSITcqLKAtPxQ
 
 ## Sample Results
 
-Languages | English | Tamil |
+Results | #1 | #2 |
 --- | --- | --- |
-Images | <img src="https://user-images.githubusercontent.com/58719230/99151490-924d1180-26c1-11eb-85a4-aa6efd2a89ce.png" > | <img src="https://user-images.githubusercontent.com/58719230/99151496-9a0cb600-26c1-11eb-8075-7b3deacb908b.png"> |
+Images | <img src="https://user-images.githubusercontent.com/58719230/116821877-65ba8280-ab99-11eb-99e4-ef13be642fa8.png" > | <img src="https://user-images.githubusercontent.com/58719230/116821878-66531900-ab99-11eb-919a-491f8d4c8cce.png"> |
 
 ## License
 
