@@ -11,7 +11,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Search"),
+        title: Text("Search Demo"),
         actions: [
           IconButton(
             onPressed: () {
@@ -62,7 +62,7 @@ class StudentSearch extends SearchDelegate<Students> {
         : studentDetails
             .where((element) => element.name
                 .toLowerCase()
-                .contains(query.toLowerCase().toString()))
+                .startsWith(query.toLowerCase().toString()))
             .toList();
 
     return listItems.isEmpty
@@ -70,9 +70,8 @@ class StudentSearch extends SearchDelegate<Students> {
         : ListView.builder(
             itemCount: listItems.length,
             itemBuilder: (context, index) {
-              final Students studentDetail = listItems[index];
               return Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 15.00),
+                  padding: const EdgeInsets.only(left: 15.00, right: 15.00),
                   child: Column(
                     children: [
                       ListTile(
@@ -80,8 +79,9 @@ class StudentSearch extends SearchDelegate<Students> {
                           Icons.person,
                           size: 40,
                         ),
-                        title: Text(studentDetail.name),
-                        subtitle: Text(studentDetail.id.toString()),
+                        title: Text(listItems[index].name),
+                        subtitle: Text(
+                            "Roll No : ${(listItems[index].id.toString())}"),
                         onTap: () {
                           showResults(context);
                         },

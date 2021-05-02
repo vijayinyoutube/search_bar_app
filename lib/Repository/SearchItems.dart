@@ -16,7 +16,7 @@ List<Students> studentDetails = [
   Students(name: "Hendry", id: 8),
   Students(name: "Ishya", id: 9),
   Students(name: "Jack", id: 10),
-  Students(name: "Jabk", id: 11),
+  Students(name: "Jacob", id: 11),
   Students(name: "Leuo", id: 12),
   Students(name: "Mohan", id: 13),
   Students(name: "Narish", id: 14),
