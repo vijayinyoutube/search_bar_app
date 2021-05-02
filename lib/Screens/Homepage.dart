@@ -60,8 +60,9 @@ class StudentSearch extends SearchDelegate<Students> {
     final listItems = query.isEmpty
         ? studentDetails
         : studentDetails
-            .where((element) =>
-                element.name.startsWith(query.toUpperCase().toString()))
+            .where((element) => element.name
+                .toLowerCase()
+                .contains(query.toLowerCase().toString()))
             .toList();
 
     return listItems.isEmpty
@@ -75,7 +76,10 @@ class StudentSearch extends SearchDelegate<Students> {
                   child: Column(
                     children: [
                       ListTile(
-                        leading: Icon(Icons.person,size: 40,),
+                        leading: Icon(
+                          Icons.person,
+                          size: 40,
+                        ),
                         title: Text(studentDetail.name),
                         subtitle: Text(studentDetail.id.toString()),
                         onTap: () {
